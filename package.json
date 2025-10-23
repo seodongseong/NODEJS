@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx parcel build index.html",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,11 +19,12 @@
   "bugs": {
     "url": "https://github.com/seodongseong/NODEJS/issues"
   },
-  "homepage": "https://github.com/seodongseong/NODEJS#readme",
+  "homepage": "https://seodongseong.github.io/NODEJS/",
   "dependencies": {
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel-bundler": "^1.12.5"
   }
 }
